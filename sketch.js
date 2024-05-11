@@ -32,6 +32,7 @@ async function getBored(){
   let j_data = await data.json();
   bored = j_data.activity;
 }
+//random quote
 async function getQuote(){
   let data = await fetch(quote_api);
   let j_data = await data.json();
@@ -74,27 +75,24 @@ function preload(){
 function setup() {
   createCanvas(windowWidth,windowHeight);
   textAlign(CENTER)
+  imageMode(CENTER)
+  pixelDensity(1);
+  frameRate(10);
+ 
   //starting checkbox
   checkbox = createCheckbox();
   checkbox.position(windowWidth/2, windowHeight/2);
 
   // APIs
-  // getJoke();
-  // getBored();
-
+  getJoke();
+  getBored();
   getQuote();
-  // getIp();
-  // getWeather();
+  getIp();
+  getWeather();
 
-  
-  pixelDensity(1);
-  frameRate(10);
 
   // image opacity 
   tint(255,129);
-  
-  imageMode(CENTER)
-  textAlign(CENTER)
 
  //horse array
   imgs.push(horse1);
@@ -143,9 +141,6 @@ function show(){
 function draw() {
   background(100);
 
-// text opacity
-  fill(255,255,255,100)
-
   // what happens if checkbox is checked
 if (checkbox.checked()){
  
@@ -157,12 +152,16 @@ if (checkbox.checked()){
   show();
 
   // data from APIs
+
+  // text opacity
   fill(255,255,255,100)
+
+  //smaller text
   textSize(50)
   text(joke,windowWidth/2, windowHeight/2 + 200);
   text(bored,windowWidth/2, windowHeight/2 - 100);
+  //bigger text
   textSize(100)
-  
   text(quote,windowWidth/2, windowHeight/2 - 100)
   text(ip,windowWidth/2, windowHeight/2 -150)
   text('current temperature:'+temp,windowWidth/2, windowHeight/2 +100)
@@ -170,13 +169,13 @@ if (checkbox.checked()){
 
   // extra text
 
-  // text('likes,comments,', windowWidth/2, windowHeight/2, - 200);
-  // text('4 unread messages',windowWidth/2 -200, windowHeight/2 - 300 );
-  // text('just posted', windowWidth/2 -80, windowHeight/2+ 290) ;
-  // text('likes, comments,',windowWidth/2, windowHeight/2 - 330 );
-  // text('likes, comments,', windowWidth/2, windowHeight/2+ 400);
-  // text('likes, comments,', windowWidth/2, windowHeight/2-200);
-  // text('2 unread messages',windowWidth/2, windowHeight/2- 400 );
+  text('likes,comments,', windowWidth/2, windowHeight/2, - 200);
+  text('4 unread messages',windowWidth/2 -200, windowHeight/2 - 300 );
+  text('just posted', windowWidth/2 -80, windowHeight/2+ 290) ;
+  text('likes, comments,',windowWidth/2, windowHeight/2 - 330 );
+  text('likes, comments,', windowWidth/2, windowHeight/2+ 400);
+  text('likes, comments,', windowWidth/2, windowHeight/2-200);
+  text('2 unread messages',windowWidth/2, windowHeight/2- 400 );
   
   // minute timer
 
