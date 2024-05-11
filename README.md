@@ -45,9 +45,9 @@ Reimagine something from a Stage 4 sketch as a living entity or an environment.
 ### 🟩 Stage 3
 - Name/Alias: Emma
 - Github account: https://github.com/emmazig
-- Published webpage for stage 3:
+- Published webpage for stage 3: https://emmazig.github.io/exquisite-corpse-stage-3-time-jockey-/
 
-*Right away I knew that I wanted to carry on and build on the idea of over interactivity and show the amount of content we are exposed to everyday, through social media and the internet in general. I loved the randomness of the different mixes of images so I kept them and changed their opacity so they blended together as a background. I used a few different APIs to draw data from, drew them to the canvas, overlapping to create a confusing list of words and numbers. I also made a CSV file with some random data to create two line graphs adding to the show of data on the screen.
+*Right away I knew that I wanted to carry on and build on the idea of over interactivity and show the amount of content we are exposed to everyday, through social media and the internet in general. The checkbox represents the act of clicking online, so once it’s clicked everything pops up onto the screen. I loved the randomness of the different mixes of images so I kept them and changed their opacity so they blended together as a background. I used a few different APIs to draw data from, drew them to the canvas, overlapping to create a confusing list of words and numbers. I also made a CSV file with some random data to create two line graphs adding to the show of data on the screen.
 I kept the horse images and the minute counter, to continue the underlying theme of time passing, and to represent how much time can be lost while scrolling or surfing the internet.
 I wanted to get across how overwhelming it can feel being online in this day and age. And how we are often bombarded with information, ads and content that we don't necessarily want to see or are interested in.*
 
